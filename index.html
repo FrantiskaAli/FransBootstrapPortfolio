@@ -12,12 +12,23 @@
 </head>
 <body>
     <!--NAVIGATION BAR START    -->
-<nav class="nav nav-pills flex-column flex-sm-row">
-  <a class="flex-sm-fill text-sm-center nav-link" href="#">About me</a>
-  <a class="flex-sm-fill text-sm-center nav-link" href="#">My work</a>
-  <a class="flex-sm-fill text-sm-center nav-link" href="#">Contact me</a>
-  <a class="flex-sm-fill text-sm-center nav-link disabled" href="#" tabindex="-1" aria-disabled="true"><img src="./images/logo.png" heigth="50px" width="50px" ></a>
-</nav>
+    <div class="pos-f-t">
+      <div class="collapse" id="navbarToggleExternalContent">
+        <div class="bg-dark p-4">
+          <span class="text-muted"> <nav class="navbar navbar-light bg-light nav nav-pills flex-column flex-sm-row">
+      <a class="flex-sm-fill text-sm-center nav-link" href="#">About me</a>
+      <a class="flex-sm-fill text-sm-center nav-link" href="#">My work</a>
+      <a class="flex-sm-fill text-sm-center nav-link" href="#">Contact me</a>
+      <a class="flex-sm-fill text-sm-center nav-link" href="#"><img src="./images/logo.png" heigth="50px" width="50px" ></a>
+    </nav> </span>
+        </div>
+      </div>
+      <nav class="navbar navbar-dark bg-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span><img src="./images/logo.png" height="35px" width="40px"   > </span>
+        </button>
+      </nav>
+    </div>
     <!--JUMBERTON-BANNER-->
     <div class="jumbotron">
         <h1 class="display-4">Hi, I am Fran</h1>
@@ -25,16 +36,18 @@
         <a class="btn btn-primary btn-lg" href="#" role="button">About me</a>
       </div>
 <!--about me in slides-->
+
+<h2>About ME</h2>
 <div id="carouselExampleControls" class="carousel slide" data-interval="false" data-ride="carousel">
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <div id="A">.</div>
+        <div id="A">here the text will go</div>
       </div>
       <div class="carousel-item">
-        <div id="B">.</div>
+        <div id="B">here the text will go</div>
       </div>
       <div class="carousel-item">
-        <div id="C">.</div>
+        <div id="C">here the text will go</div>
       </div>
     </div>
     <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -48,13 +61,58 @@
   </div>
 
   <!--PORTFOLIO EXAMPLES-->
-  <div class="conatainer-fluid">
 
+  <div class="container-fluid">
+    <h2>My work</h2>
+    <div class="row justify-content-center">
+      
+      <div class="containerBox col-10 col-md-8 col-lg-8"><!--column box-->
+
+      </div><!--column box end-->
+    </div><!--end of ROW--> 
+
+    <div class="row justify-content-center">
+      <div class="containerBox col-10 col-md-3 col-lg-2"><!--column box-->
+        
+      </div><!--column box end-->
+      
+      <div class="containerBox col-10 col-md-3 col-lg-2"><!--column box-->
+        
+      </div><!--column box end-->
+      
+      <div class="containerBox col-10 col-md-3 col-lg-2"><!--column box-->
+        
+      
+      </div><!--column box end-->
+    </div><!--end of ROW--> 
+    <div class="row justify-content-center">
+      <div class="containerBox col-10 col-md-3 col-lg-4"><!--column box-->
+        
+      
+      </div><!--column box end-->
+      <div class="containerBox col-10 col-md-3 col-lg-4"><!--column box-->
+        
+      
+      </div><!--column box end-->
+    </div><!--end of ROW--> 
     
+  </div><!--end of container-->
+<!--contact information-->
+<h2>Contact me</h2>
+<div class="container-fluid">
+  <div class="row justify-content-center">
+    <div class="containerBox col-12 col-md-3 col-lg-3"><!--phone contact start-->
+
+    </div><!--phone contact end-->
+    <div class="containerBox col-12 col-md-3 col-lg-3"><!--email-->
+      
+    </div><!--email end-->
+    <div class="containerBox col-12 col-md-3 col-lg-3"><!--github-->
+      
+    </div><!--github end-->
   </div>
 
-
-
+</div>
 
 
 

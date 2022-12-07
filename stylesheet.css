@@ -13,3 +13,19 @@
     background-color: yellow;
     height: 250px;
 }
+.containerBox {
+    border: 3px solid blue;
+    height:200px;
+    
+}
+.container-fluid {
+    margin-top: 5% !important;
+}
+
+
+@media screen (max-width: 560px) {
+    .nav {
+        float: right !important;
+    }
+    
+}
