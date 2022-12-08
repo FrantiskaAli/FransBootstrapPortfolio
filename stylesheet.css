@@ -1,3 +1,54 @@
+body{
+background-image: url(./images/wallpaper_gradient-green-black-linear-2640x1200-c2-000000-006400-a-75-f-14.png);
+background-position: center;
+background-size: cover;
+background-repeat: no-repeat;
+
+}
+
+.jumbotron{
+    background-image: url(./images/jumbotron.jpg);
+    height: 105vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.bg-dark{
+    background-color: rgb(0,0,0,0) !important;
+    
+}
+.navbar{
+    display: flex;
+    flex-direction: row-reverse;
+    margin-bottom: -7%;;
+
+
+}
+.navbar button{
+    margin-right:2%;
+    margin-top: 2%;
+    height:40px; 
+    width:45px;
+    background-image: url(./images/menu.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+
+}
+.navbar button:focus{
+    outline: solid rgb(19, 107, 11) !important;
+}
+
+
+
+
+
+
+
+
+
 .carousel {
     height: 250px;
     background-color: aqua;
