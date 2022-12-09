@@ -37,7 +37,7 @@ background-repeat:no-repeat;
 
 }
 .navbar button:focus{
-    outline: solid rgb(173, 60, 150);
+    outline: solid rgb(255, 255, 255);
 }
 .nav-link{
     color:white;
@@ -87,14 +87,8 @@ h2 {
     color: white;
     font-size: 200%;
     font-weight: bolder;
+    text-align: center;
 }
-#about {
-    margin-bottom: 5%;
-    float: right;
-    margin-right: 30px;
-}
-
-
 
 /*ABOUT ME SECTION*/
 
@@ -153,38 +147,71 @@ h2 {
     width: 50%;
     margin:auto;
 }
-.carousel-item
 
-
-
-/*grid with work linkw */
-.myGrid {
-    display: grid;
-    height: 400px;
-    width: 800px;
-    grid-template-columns: 50% 25% 25%;
-    grid-template-rows: 200px 200px;
-    grid-template-areas: "mainWork work2 work2"
-                        "mainWork work3 work4" ;
-                   }
-#mainWork{
-    background-color: aqua;
+.work {
+    margin-top: 10%;
 }
-#mainWork{
-    grid-area: mainWork;
+.work h2 {
+    text-align: center;
 }
-#work2{
-    grid-area: work2;
-
-}
-#work3{
-    grid-area: work3;
+.box{
+    margin:4% 1%;
+    height:200px;
     
 }
-#work4{
-    grid-area: work4;
+
+.box img {
+    height: 100%;
+    width: 100%;
+    border: white solid 2px;
+    border-bottom: none;
+    border-radius: 20px 20px 0px 0px;
+    filter: brightness(60%);
 }
-#work5{
-    grid-area: work5;
-    
+.box img:hover{
+    filter: brightness(100%);
 }
+.label {
+    position: relative;
+    color:white;
+    background-color: rgb(173, 60, 150, 0.6) ;
+    text-align: center;
+    margin-top: -10%;
+    z-index: 10;
+    border-radius: 0px 0px 20px 20px;
+    border: 2px solid white;
+    border-top: none;
+}
+
+.contact{
+    text-align: center;
+    margin: 5% 0%;
+}
+.conatctButton{
+  
+background-color:  rgb(173, 60, 150, 0.6);
+border: solid 2px white;
+border-radius: 20px;
+
+
+}
+.conatctButton:hover{
+    box-shadow: 3px 6px rgb(255, 255, 255, 0.6);
+    border:solid 2px black;
+}
+
+i {
+    color:white;
+}
+i:hover{
+    color: black;
+}
+
+
+
+
+
+
+
+
+
