@@ -1,64 +1,68 @@
 *{
     display: border-box;
-    font-family: 'Passion One' ,sans-serif;
 }
-
+:root {
+    --color: rgb(173, 60, 150);
+}
 
 /*MAIN BACKGROUND*/
 
 
 body{
-background-image: url(./images/bckg2.jpg);
+background-image: url(../images/bckg2.jpg);
 background-position: center;
 background-size: cover;
 background-repeat:no-repeat;
-font-family: 'One Passion', Arial, Helvetica, sans-serif;
+font-family: 'Passion One', Arial, Helvetica, sans-serif;
 
 }
 
 /*NAVIGATION BUTTON AND BAR*/
 .bg-dark{
     background-color: rgb(0,0,0,0) !important;
-    
 }
+
 .navbar{
     display: flex;
     flex-direction: row-reverse;
     margin-bottom: -7%;;
 }
+
 .navbar button{
     margin-right:2%;
     margin-top: 2%;
     height:40px; 
     width:45px;
-    background-image: url(./images/menu.png);
+    background-image: url(../images/menu.png);
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
     border-radius: 50%;
-
 }
+
 .navbar button:focus{
     outline: solid rgb(255, 255, 255);
 }
+
 .nav-link{
     color:white;
     font-size: 30px;
     font-weight: bold;
     margin-top: -1%;
-    -webkit-text-stroke: 1px rgb(173, 60, 150);
+    -webkit-text-stroke: 1px var(--color);
 }
-a .nav-link {
-    font-family: 'Passion One', Arial, Helvetica, sans-serif;
-}
+
 a .nav-link:hover{
-    color: rgb(173, 60, 150);
+    color: var(--color);
 }
+
 .nav-link:hover{
-    color: rgb(173, 60, 150);
+    color: var(--color);
     -webkit-text-stroke: 1px white;
 }
+
 /*wELCOME HEADER*/
+
 .jumbotron{
     background-color:rgb(19, 107, 11,0);
     height: 105vh;
@@ -66,47 +70,61 @@ a .nav-link:hover{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    -webkit-text-stroke: 1px black;
 }
-.jumbotron h1{
 
-    margin-top: -20%;
+.jumbotron h1{
+    margin-top: -10%;
     font-size: 700%;
     font-weight: bolder;
     color: white;
     font-family: 'Passion One' ,sans-serif;
     -webkit-text-stroke: 2px black;
+    margin-left: 0%;
 }
+
 .jumbotron p{
     font-size: 200%;
     font-family: 'One Passion', Arial, Helvetica, sans-serif;
+    -webkit-text-stroke: 1.5px black;
     
 }
 .customButton{
     width: 25%;
     background-color: rgb(173, 60, 150, 0.8);
     border-radius: 20px;
-    margin-top: 10%;
+    margin-top: 15%;
     border: 2px white solid;
     color:black;
     font-size:xx-large;
     letter-spacing: 0.7rem;
+    align-self: flex-end;
+    margin-right: 35%;
 }
-.customButton:hover{
-    color: rgb(173, 60, 150);
-    -webkit-text-stroke: 2px black;
 
+.customButton:hover{
+    color: var(--color);
+    -webkit-text-stroke: 2px black;
+    border: 2px solid black;
+}
+.picture{
+    align-self: flex-end;
+    margin-left: -2%;
+    margin-bottom: -7%;
+    margin-top: 5%;
+    margin-right: 15%;
+    filter: brightness(80%);
+}
+.picture:hover{
+    filter: brightness(100%);
 }
 .jumbotron img {
-    align-self: flex-end;
-    margin-right: 5%;
-    margin-top: 4%;
+    
     border-radius: 50%;
     border: solid white 2px;
+      
 }
 
-
-/*header*/
+/*headers for sections*/
 h2 {
     color: white;
     font-size: 300%;
@@ -114,7 +132,7 @@ h2 {
     text-align: center;
     -webkit-text-stroke: 2px black;
     margin: 5%;
-    margin-top: 7%;
+    margin-top: 8%;
 }
 
 /*ABOUT ME SECTION*/
@@ -124,21 +142,30 @@ h2 {
     margin:auto;
     width: 80%;
     margin-top: 5%;
-    
- 
 }
-
 
 #A h3, #B h3, #C h3 {
     margin-bottom: 2%;
+    font-weight: 900;
     
+}
+#A h3{
+    -webkit-text-stroke: 1px black;
+}
+#B h3{
+    -webkit-text-stroke: 1px var(--color);
+}
+#C h3 {
+    -webkit-text-stroke: 1px white;
 }
 #A p,#B p, #C p{
     width: 50%;
     margin:auto;
     letter-spacing: 0.5rem;
-    font-family: 'Oswald', sans-serif;
-    font-weight: 400;
+    font-family: 'Passion One', sans-serif;
+    font-weight: 50;
+    font-size: larger;
+    margin-bottom: 10%;
 }
 
 #A {
@@ -149,8 +176,7 @@ h2 {
     border-radius: 20px;
     border: solid 2px white;
     color: white;
-    padding-top: 10% ;
-    
+    padding-top: 7% ;   
 }
 
 #B {
@@ -160,9 +186,8 @@ h2 {
     border: solid 2px white;
     color:black;
     text-align: center;
-    padding-top: 10%;
+    padding-top: 7%;
 }
-
 
 #C {
     height: 50vh;
@@ -170,22 +195,17 @@ h2 {
     text-align: center;
     border-radius: 20px;
     border: solid 2px white;
-    color:rgb(173, 60, 150);
-    padding-top: 10%;
+    color:var(--color);
+    padding-top: 7%;
 }
-
-
-
+/*work links*/
 .work {
-    margin-top: 10%;
+    margin-top: 15%;
 }
-.work h2 {
-    text-align: center;
-}
+
 .box{
     margin:4% 1%;
-    height:200px;
-    
+    height:250px;  
 }
 
 .box img {
@@ -196,10 +216,14 @@ h2 {
     border-radius: 20px 20px 0px 0px;
     filter: brightness(60%);
 }
+
 .box img:hover{
     filter: brightness(100%);
+    box-shadow: 0px 0px 100px 0px rgba(250, 250, 250, 0.5);
 }
+
 .label {
+    font-family: 'Passion one', sans-serif;
     position: relative;
     color:white;
     background-color: rgb(173, 60, 150, 0.6) ;
@@ -210,7 +234,15 @@ h2 {
     border: 2px solid white;
     border-top: none;
 }
+.label h3{
+    -webkit-text-stroke: 2px black;
 
+}
+.label p{
+    font-weight: 100;
+    letter-spacing: 0.1rem;
+}
+/*FOOTER*/
 .contact{
     text-align: center;
     margin: 5% 0%;
@@ -235,11 +267,50 @@ i:hover{
     color: black;
 }
 
+#up{
+    margin-left: 20%;
+}
+#up i{
+    color: var(--color);
+    -webkit-text-stroke: 2px white;
+}
+#up i:hover{
+    -webkit-text-stroke: 2px var(--color);
+    color: black;
 
+}
 
+/*___MEDIA QUERRIES___*/
 
+@media (max-width: 990px) {
 
+.picture{
+    align-self: center;
+    margin-left:13%;
+    margin-bottom: 10%;
+}
+.box{
+    margin:5% 0%;
+    height:200px;
+    
+}
+.jumbotron h1{
+    align-self: center;
+}
 
+.jumbotron p{
+    align-self: center;
+}
+.customButton{
+    align-self: center;
+    margin-left: 35%;
+    letter-spacing: 0.2rem;
+}
 
-
+}
+@media (max-width: 766px) {
+    #up{
+        margin-left: 15%;
+    }
+}
 
