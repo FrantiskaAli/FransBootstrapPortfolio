@@ -10,7 +10,12 @@ Conntains these Bootstrap components: navigation (in the rocke tbutton),jumbotro
 
 Read in browser.
 
-## Picture
+## Screenshot
+Here is preview of my work.
+![Screenshot](images/Screenshot.jpg)
 
 ## Link
 [HERE](https://frantiskaali.github.io/FransBootstrapPortfolio/) you can find my deployed pages.
+
+## Credits
+Created by me(FrenaAli /Freantiska Rechkova) using Bootstrap 4.6.
