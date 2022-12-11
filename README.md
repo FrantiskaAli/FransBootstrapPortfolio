@@ -13,4 +13,4 @@ Read in browser.
 ## Picture
 
 ## Link
-(Here)[https://frantiskaali.github.io/FransBootstrapPortfolio/] you can find my deployed application.
+[HERE](https://frantiskaali.github.io/FransBootstrapPortfolio/) you can find my deployed pages.
