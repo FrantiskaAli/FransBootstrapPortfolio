@@ -18,4 +18,4 @@ Here is preview of my work.
 [HERE](https://frantiskaali.github.io/FransBootstrapPortfolio/) you can find my deployed pages.
 
 ## Credits
-Created by me(FrenaAli /Freantiska Rechkova) using Bootstrap 4.6.
+Created by me(FranAli /Frantiska Rechkova) using Bootstrap 4.6.
